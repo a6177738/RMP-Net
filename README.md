@@ -6,15 +6,22 @@ This repository contains partial code for the paper:
 Authors: Xiaofan Li, Bo Peng, et al.
 
 ## Description
-This repository includes the training scripts for **individual modalities** (e.g., image, keypoints, and laryngoscope) used in the study. The **complete code**, including the full multi-modal training and evaluation framework, will be released **once the paper is officially accepted**.
+This repository includes scripts for training and model implementation for **three modalities**: image, keypoints (front and side view), and laryngoscope. The code provided here focuses on individual modality processing, with the following files:
 
-We aim to provide the research community with access to modality-specific experiments while maintaining the integrity of the peer-review process.
+### Included Files
+1. **Image Modality**:
+   - `train_img.py`: Training script for the image modality.
+   - `model_img.py`: Model definition for the image modality.
 
-## Contents
-- `image_training/`: Scripts for training on the image modality.
-- `keypoints_training/`: Scripts for training on the keypoints modality.
-- `laryngoscope_training/`: Scripts for training on the laryngoscope modality.
-- Configurations and utility scripts for modality-specific experiments.
+2. **Keypoints Modality**:
+   - `GCNmodel_front.py`: Graph Convolutional Network (GCN) model for keypoints (front view), including training functions.
+   - `GCNmodel_side.py`: Graph Convolutional Network (GCN) model for keypoints (side view), including training functions.
+
+3. **Laryngoscope Modality**:
+   - `train_laryngoscope.py`: Training script for the laryngoscope modality.
+   - `model_laryngoscope.py`: Model definition for the laryngoscope modality.
+
+The **complete multi-modal training and evaluation framework** will be released **once the paper is officially accepted**.
 
 ## Prerequisites
 - **Python** >= 3.6
@@ -25,7 +32,6 @@ We aim to provide the research community with access to modality-specific experi
   - `matplotlib`
   - `scipy`
   - `sklearn`
-  - Built-in `math` module
 
 Install dependencies via `pip`:
 ```bash
