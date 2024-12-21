@@ -4,7 +4,7 @@ import time
 import cv2
 
 from torch.autograd import Variable
-from Laryngoscope.model import PUCLNet
+from model_laryngoscope import PUCLNet
 from Laryngoscope.data import Data
 from loss import Few_Shot_Loss
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
