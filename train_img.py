@@ -6,7 +6,7 @@ import numpy as np
 
 from torch.autograd import Variable
 import torch.nn.functional
-from model.model_proto import Net
+from model_img import Net
 from cvfold10_data import train_Data,test_Data,traintestindex
 from loss import ProtoLoss,prototype_nce_loss
 from cvfold10_test  import test
