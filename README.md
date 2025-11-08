@@ -14,12 +14,12 @@ This repository includes scripts for training and model implementation for **thr
    - `model_img.py`: Model definition for the image modality.
 
 2. **Keypoints Modality**:
-   - `Keypoints/GCNmodel_front.py`: Graph Convolutional Network (GCN) model for keypoints (front view), including training functions.
-   - `Keypoints/GCNmodel_side.py`: Graph Convolutional Network (GCN) model for keypoints (side view), including training functions.
+   - `Keypoints/GCNmodel3.py`: Graph Convolutional Network (GCN) model for keypoints (front view), including training functions.
+   - `Keypoints/GCNmodel6.py`: Graph Convolutional Network (GCN) model for keypoints (side view), including training functions.
 
 3. **Laryngoscope Modality**:
-   - `Laryngoscope/train_laryngoscope.py`: Training script for the laryngoscope modality.
-   - `Laryngoscope/model_laryngoscope.py`: Model definition for the laryngoscope modality.
+   - `Laryngoscope/train.py`: Training script for the laryngoscope modality.
+   - `Laryngoscope/model.py`: Model definition for the laryngoscope modality.
 
 The **complete multi-modal training and evaluation framework** will be released **once the paper is officially accepted**.
 
